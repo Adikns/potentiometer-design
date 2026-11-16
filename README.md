@@ -2,7 +2,6 @@
 
 A potentiometer part I designed in Fusion 360 for the Lafayette EV Club's electric race car. It's the piece of the throttle pedal that tells the car how much power the driver wants.
 
-![Potentiometer model](images/potentiometer.png)
 
 ## How it works
 
@@ -16,8 +15,6 @@ The pedal turns the potentiometer's shaft. As the shaft turns, the potentiometer
 
 ## Gearbox assembly
 
-![Gearbox assembly](images/gearbox-assembly.png)
-
 The gearbox in the same project, modeled as a full assembly in Fusion 360:
 
 - Housing
@@ -28,8 +25,6 @@ The gearbox in the same project, modeled as a full assembly in Fusion 360:
 - Retaining rings, a Woodruff key, and stainless steel screws (off-the-shelf McMaster-Carr parts)
 
 ## Circuit (KiCad)
-
-![KiCad schematic](images/schematic.png)
 
 Parts in the schematic:
 
@@ -45,7 +40,7 @@ Parts in the schematic:
 
 Here's how it works. The buzzer sits between VCC and the MOSFET. R1 holds the MOSFET's gate low, so the buzzer stays off. When the two screw-terminal pins get connected, the gate is pulled up to VCC, the MOSFET turns on, and the buzzer sounds. C1 filters noise on the gate.
 
-<!-- Add a sentence here on what this circuit is for. Delete this note if you skip it. -->
+It was used to find power supplied to the system by the driver's leg, in percentage.
 
 ## Files
 
@@ -58,5 +53,3 @@ Here's how it works. The buzzer sits between VCC and the MOSFET. R1 holds the MO
 ## Tools
 
 Fusion 360, KiCad
-
-<!-- Optional: add the hardest problem you hit and how you fixed it. Delete this note if you skip it. -->
